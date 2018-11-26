@@ -1,0 +1,72 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #1337;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  height: 100%;
+  background: url(ita/front.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(ita/bg.png);
+}
+
+
+.judul {position: absolute;width: 510px;display: block;left: 130px;top: 80px;}
+.judul h1 {font-weight: 700;text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+             letter-spacing: 1px;font-size: 30px;}
+
+.footer {position: absolute;bottom: 10px;right: 20px;padding: 5px 10px;background: rgba(0,0,0,.5);border-radius: 5px;}
+.footer h3 {margin-top: 5px;margin-bottom: 5px;font-weight: 700;}
+.footer p {font-size: 12px;}
+
+@media (max-width: 970px) {
+  .judul {top: 20px;right: 30px;}
+}
+
+@media (max-width: 768px) {
+  .judul {top: 30px;right: 10px;width: 300px;}
+  .judul h1 {font-size: 36px;}
+}
